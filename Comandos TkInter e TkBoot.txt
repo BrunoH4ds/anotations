@@ -1,0 +1,51 @@
+# delete() para deletar algo, como o texto dentro do Entry
+# command=lambda:[] para executar mais de um comando em um evento
+# state= para definir o estado de um item, como 'normal' ou 'disabled' (desativado)
+# pack_forget() usado para ocultar itens que estão anexados a um frame
+# pack() usado para exibir itens que estão anexados a um frame
+# deiconify() para mostrar uma janela que foi escondida
+# withdraw() para esconder uma janela
+# destroy() para fechar a janela e liberar os recursos
+# insert() para inserir um item em uma lista ou texto
+# relief= para definir o estilo da borda (ex: 'flat', 'raised', 'sunken')
+# Text() cria uma caixa de texto multi-linha
+# grid(), place(), pack() para definir a posição e o layout dos widgets
+# ipadx= e ipady= para definir o espaço interno extra dentro do widget
+# \n para inserir uma quebra de linha em um texto
+# PhotoImage() para criar uma variável de imagem (use com Label ou outros widgets para exibir a imagem)
+# file= para especificar o caminho de um arquivo
+# imagem= imagem.subsample() para reduzir o tamanho da imagem
+# imagem= imagem.zoom() para ampliar o tamanho da imagem
+# highlightthickness= para definir a espessura da linha de destaque ao redor do widget
+# font=("arial", 18) para definir o nome da fonte e o tamanho (ex: 'arial', 18)
+# Entry() cria uma caixa de texto de uma linha
+# bd= para definir o tamanho da borda do widget
+# fg= para definir a cor do texto (foreground)
+# config() para atualizar as opções de um widget
+# get() para obter o texto digitado em um widget de entrada
+# janela["bg"]= 'gray' para definir a cor de fundo da janela (ou de outros widgets)
+# padx= e pady= para adicionar espaçamento interno horizontal e vertical
+# column= e row= para definir a posição de um widget em um grid
+# label() para criar um widget de texto
+# Button() cria um botão
+# command= para definir a função a ser chamada quando o botão for clicado
+# janela.tk() para criar a instância principal do Tkinter
+# janela.mainloop() para iniciar o loop principal do Tkinter e manter a janela aberta
+# janela.title() para definir o título da janela
+# janela.geometry() para definir o tamanho e a posição da janela (ex: '300x200+100+100')
+# wraplength= define a largura máxima do texto antes de quebrar a linha
+# borderwidth= para definir a largura da borda do widget
+# relief= para definir o estilo da borda, como 'flat', 'raised', 'sunken', etc.
+# padx= e pady= para definir o espaçamento interno do widget
+# textvariable= para associar uma variável Tkinter a um widget de texto (ex: Entry ou Label)
+# image= para associar uma imagem a um widget (ex: Label)
+# background= ou bg= para definir a cor de fundo do widget
+# highlightbackground= e highlightcolor= para definir a cor da linha de destaque
+# anchor= para alinhar o texto ou o conteúdo dentro do widget (ex: 'n', 's', 'e', 'w')
+# padx= e pady= para adicionar espaçamento interno horizontal e vertical
+# padx= e pady= para adicionar espaçamento interno horizontal e vertical
+# textvariable= para associar uma variável Tkinter a um widget de texto
+# relief= para definir o estilo da borda, como 'flat', 'raised', 'sunken', etc.
+# command= para definir a função a ser chamada quando o botão for clicado
+# validate= para definir o tipo de validação para widgets de entrada (ex: 'key', 'focus', etc.)
+# validatecommand= para associar uma função de validação a um widget de entrada

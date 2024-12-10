@@ -1,0 +1,62 @@
+Cores e Fundo
+#background-color: Define a cor de fundo de um elemento.
+#color: Altera a cor do texto dentro de um elemento.
+#opacity: Define a opacidade/transparência de um elemento (0 a 1).
+Tipografia
+#font-family: Especifica a família de fontes para o texto.
+#font-size: Define o tamanho da fonte.
+#font-weight: Ajusta o peso da fonte (ex: bold, normal).
+#line-height: Define a altura da linha de texto.
+#text-align: Alinha o texto horizontalmente (left, right, center, justify).
+#text-transform: Transforma o texto (uppercase, lowercase, capitalize).
+#text-decoration: Modifica a decoração do texto, como sublinhado ou linha no meio (underline, line-through).
+Layout e Box Model
+#display: Especifica o tipo de caixa de renderização (block, inline, flex, grid, none).
+#position: Define o método de posicionamento de um elemento (static, relative, absolute, fixed, sticky).
+#top, #right, #bottom, #left: Define a posição de um elemento quando position não é static.
+#margin: Define a margem externa em torno de um elemento (top, right, bottom, left).
+#padding: Define o espaçamento interno entre o conteúdo e a borda de um elemento (top, right, bottom, left).
+#width, #height: Define a largura e altura de um elemento.
+#max-width, #max-height: Define a largura e altura máximas de um elemento.
+#min-width, #min-height: Define a largura e altura mínimas de um elemento.
+#border: Define a borda ao redor de um elemento (largura, estilo, cor).
+#border-radius: Define os cantos arredondados de uma borda.
+#box-shadow: Adiciona sombra ao redor de um elemento.
+Flexbox e Grid
+#display: flex: Define um contêiner flexível.
+#flex-direction: Define a direção dos itens no contêiner flexível (row, column).
+#justify-content: Alinha os itens ao longo do eixo principal do contêiner (start, center, space-between, space-around).
+#align-items: Alinha os itens ao longo do eixo cruzado no contêiner flexível (start, center, end).
+#flex-wrap: Define se os itens devem ou não quebrar para uma nova linha dentro do contêiner flexível.
+#gap: Define o espaço entre os itens em um contêiner flex ou grid.
+Efeitos Visuais
+#background-image: Adiciona uma imagem de fundo a um elemento.
+#background-size: Ajusta o tamanho da imagem de fundo.
+#background-position: Define a posição da imagem de fundo.
+#background-repeat: Define se a imagem de fundo deve se repetir.
+#transform: Aplica transformações 2D ou 3D a um elemento (translate, rotate, scale).
+#transition: Define o tempo de transição para mudanças de propriedades.
+#animation: Aplica uma animação aos elementos.
+Pseudo-classes e Pseudo-elementos
+#hover: Estilo aplicado quando o mouse está sobre um elemento.
+#active: Estilo aplicado quando um elemento está sendo clicado.
+#focus: Estilo aplicado quando um elemento está em foco.
+#before, #after: Inserem conteúdo antes ou depois de um elemento, sem estar no HTML.
+Outras Propriedades
+#z-index: Define a ordem de empilhamento de elementos posicionados.
+#overflow: Controla o que acontece quando o conteúdo de um elemento é grande demais para caber em seu bloco (visible, hidden, scroll, auto).
+#visibility: Define se um elemento é visível ou não (visible, hidden).
+#cursor: Define o tipo de cursor que deve ser exibido ao passar sobre o elemento.
+Responsividade
+#media queries: Define estilos diferentes para dispositivos e tamanhos de tela específicos.
+@media (max-width: 768px) {
+    /* Estilos para telas pequenas */
+}
+Organização e Seletores
+#class: Seleciona elementos com uma classe específica (.class-name).
+#id: Seleciona elementos com um id específico (#id-name).
+#universal selector (*): Seleciona todos os elementos.
+#child selector (>): Seleciona elementos filhos diretos.
+#descendant selector (espaço): Seleciona todos os descendentes de um elemento.
+#attribute selector: Seleciona elementos com um atributo específico ([type="text"]).
+#object cover para cobrir a imagem no elemento sem distorcer

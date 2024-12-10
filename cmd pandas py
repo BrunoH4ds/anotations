@@ -1,0 +1,12 @@
+#.read_tipodearquivo("filename") para ler o arquivo
+#.drop(columns="nomedacoluna" ou row=numerodalinha) para remover uma linha ou coluna
+#.info() para pegar informacoes da tabela e ver se tem valores vazios ou preenchidos errados
+#.dropna() para remover qualquer valor que esteja vazio 
+#.mean() para calcular media
+#.max para calcular maxima
+#.display() para ver alguma coisa
+#.min para calcular minima
+#tabela["nomedacoluna"].value_counts() para contar os valores de uma tabela
+#tabela["nomedacoluna"].value_counts(normalize=true) para mostrar em porcentagem
+#tabela[tabela["nomedacoluna"] comparacao em == ou <= etc valor ou "string"]
+#.dtype para pegar o tipo de dados como int,str,float etc.

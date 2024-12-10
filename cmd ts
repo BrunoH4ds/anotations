@@ -1,0 +1,410 @@
+// Declarando uma variável 'nome' do tipo string e atribuindo o valor 'João'
+let nome: string = 'João'; 
+// Aqui, você está definindo que 'nome' deve ser uma string. Se tentar atribuir um número, ocorrerá um erro.
+
+let numeros: number[] = [1, 2, 3, 4]; 
+// Para criar uma lista (ou array) de números, você declara o tipo seguido de [].
+// Isso indica que 'numeros' é um array contendo apenas números.
+
+console.log(nome);  // Exibe o valor da variável 'nome' no console.
+console.log(numeros); // Exibe a lista de números no console.
+
+export {}; // Permite que você use este arquivo como um módulo, evitando conflitos de nome com outras variáveis.
+
+function bomDia(): void {  
+  // Definindo uma função chamada 'bomDia' que não aceita parâmetros e não retorna valor (void).
+  console.log('Bom dia!'); // A função imprime 'Bom dia!' no console.
+}
+
+bomDia(); // Chamando a função 'bomDia' para que ela execute o código dentro dela.
+
+function somar(a: number, b: number): number { 
+  // Criando uma função 'somar' que aceita dois parâmetros (a e b) do tipo number e retorna um número.
+  return a + b; // A função retorna a soma de a e b.
+}
+
+const resultado = somar(10, 20); // Chamando a função 'somar' com os argumentos 10 e 20.
+console.log(resultado); // Exibe o resultado da soma no console.
+
+let x: any = 5; 
+// 'any' é um tipo especial que permite que a variável 'x' possa ser de qualquer tipo.
+// Aqui, 'x' é inicialmente um número.
+
+console.log(x); // Exibe o valor de 'x'.
+
+x = 'João'; // A variável 'x' agora é uma string.
+console.log(x); // Exibe a nova string 'João'.
+
+x = [1, 2, 3, 4]; // Agora 'x' é um array de números.
+console.log(x); // Exibe o array.
+
+const pessoa: { nome: string; idade: number } = { 
+  // Aqui, você define um objeto 'pessoa' com as propriedades 'nome' e 'idade'.
+  // As propriedades têm tipos específicos, 'nome' é uma string e 'idade' é um número.
+  nome: 'Maria',
+  idade: 30,
+};
+
+pessoa.idade = 31; // Você pode modificar propriedades do objeto.
+
+console.log(pessoa.nome); // Exibe o nome da pessoa.
+console.log(pessoa.idade); // Exibe a idade da pessoa.
+
+type ID = string | number; 
+// 'type' permite que você defina um novo tipo que pode ser uma string ou um número.
+// O símbolo '|' representa uma união, ou seja, 'ID' pode ser de qualquer um dos dois tipos.
+
+let usuarioId: ID = 2112; 
+console.log(usuarioId); // Exibe o ID numérico.
+
+usuarioId = 'a1b2c3d4-0b3b-4b3b-8b3b-0b3b4b3b8b3b'; 
+console.log(usuarioId); // Agora 'usuarioId' é uma string.
+
+let id: string | number = 5; 
+console.log(id); // Exibe o ID numérico.
+
+id = 'f4a460f0-0b3b-4b3b-8b3b-0b3b4b3b8b3b'; 
+console.log(id); // Agora 'id' é uma string.
+
+interface Animal { 
+  // 'interface' é usada para definir a forma de um objeto. Neste caso, especificamos que um objeto 'Animal' deve ter 'nome', 'tipo' e 'domestico'.
+  nome: string;
+  tipo: 'terrestre' | 'aquático'; // O tipo 'tipo' pode ser apenas 'terrestre' ou 'aquático'.
+  domestico: boolean; // 'domestico' deve ser um valor booleano (true ou false).
+}
+
+interface Pet extends Animal { 
+  // A interface 'Pet' estende a interface 'Animal', adicionando a propriedade 'dono'.
+  dono: string; // 'dono' é uma string que representa o dono do animal de estimação.
+}
+
+let cachorro: Pet = { 
+  // Criando um objeto 'cachorro' que segue a interface 'Pet'.
+  nome: 'Rex',
+  tipo: 'terrestre',
+  domestico: true,
+  dono: 'Victor',
+};
+
+console.log(cachorro); // Exibe o objeto 'cachorro'.
+
+interface Especificacoes {
+  // Aqui, a interface 'Especificacoes' define como deve ser a estrutura de um computador.
+  marca: string;
+  modelo: string;
+  placaDeVideo: string;
+  memoria: string;
+  processador: string;
+  armazenamento: string;
+  [extra: string]: string | number | boolean; 
+  // O índice [extra] permite que a interface aceite propriedades adicionais que podem ser de qualquer tipo definido.
+}
+
+let computador: Especificacoes = {
+  // Criando um objeto 'computador' que atende à interface 'Especificacoes'.
+  marca: 'Dell',
+  modelo: 'Inspiron 15 3000',
+  placaDeVideo: 'Intel UHD Graphics 620',
+  memoria: '8 GB',
+  processador: 'Intel Core i5',
+  armazenamento: '256 GB SSD',
+  bluetooth: true, // Propriedade adicional.
+  hdmi: true, // Propriedade adicional.
+};
+
+console.log(computador); // Exibe o objeto 'computador'.
+
+interface Produto {
+  id: number;
+  nome: string;
+  descricao: string;
+  preco: number;
+  imagem: string;
+}
+
+const produto1: Produto = { // Criando o produto 1.
+  id: 1,
+  nome: 'Smartphone',
+  descricao: 'Um smartphone top de linha',
+  preco: 2000,
+  imagem: 'smartphone.jpg',
+};
+
+const produto2: Partial<Produto> = { 
+  // 'Partial' permite que você crie um objeto que pode ter apenas algumas das propriedades da interface 'Produto'.
+  id: 2,
+  nome: 'Notebook',
+  preco: 3000,
+};
+
+console.log(produto1); // Exibe o produto 1.
+console.log(produto2); // Exibe o produto 2.
+
+interface Usuario {
+  id: number | string; // 'id' pode ser um número ou uma string.
+  nome: string;
+  email: string;
+  senha?: string | null; // O '?' indica que a propriedade 'senha' é opcional e pode ser uma string ou null.
+  ativo: boolean;
+}
+
+let usuario: Usuario = {
+  // Criando um objeto 'usuario' que atende à interface 'Usuario'.
+  id: 1234,
+  nome: 'Fulano de Tal',
+  email: 'fulano@empresa.com.br',
+  ativo: true,
+  senha: null, // 'senha' pode ser null, indicando que o usuário não tem senha definida.
+};
+
+console.log(usuario.nome); // Exibe o nome do usuário.
+console.log(usuario); // Exibe o objeto 'usuario'.
+
+interface AulaProps {
+  id: number;
+  nome: string;
+  duracaoEmSegundos: number; // Duração em segundos.
+}
+
+class Aula { 
+  // A palavra-chave 'class' define uma nova classe chamada 'Aula'.
+  constructor(readonly props: AulaProps) {}  
+  // O construtor aceita um objeto do tipo 'AulaProps' e armazena na propriedade 'props'.
+
+  get id(): number { 
+    // Acessor (getter) para a propriedade 'id', retornando o id da aula.
+    return this.props.id; 
+  }
+
+  get nome(): string {
+    // Acessor para a propriedade 'nome', retornando o nome da aula.
+    return this.props.nome;
+  }
+
+  get duracaoEmSegundos(): number {
+    // Acessor para a duração em segundos, retornando o valor.
+    return this.props.duracaoEmSegundos;
+  }
+
+  duracaoEmHM(): string {
+    // Método que converte a duração de segundos para horas e minutos.
+    const horas = Math.floor(this.duracaoEmSegundos / 3600); // Converte segundos para horas.
+    const minutos = Math.floor((this.duracaoEmSegundos % 3600) / 60); // Converte o restante em minutos.
+    return `${horas}h ${minutos}m`; // Retorna a string formatada.
+  }
+}
+
+const aula = new Aula({
+  // Criando uma nova instância da classe 'Aula'.
+  id: 1,
+  nome: 'Introdução ao TypeScript',
+  duracaoEmSegundos: 6000, // A duração da aula em segundos.
+});
+
+console.log(aula.nome); // Exibe o nome da aula.
+console.log(aula.duracaoEmHM()); // Exibe a duração da aula em horas e minutos.
+console.log(aula.props); // Exibe as propriedades da aula.
+
+class Usuario {
+  // Definindo as propriedades da classe 'Usuario'.
+  id: number; // 'id' é um número que representa a identificação do usuário.
+  nome: string; // 'nome' é uma string que armazena o nome do usuário.
+  email: string; // 'email' é uma string que armazena o e-mail do usuário.
+  senha?: string | null; // 'senha' é uma string opcional que pode ser nula, caso o usuário não tenha uma senha definida.
+  ativo: boolean; // 'ativo' é um booleano que indica se o usuário está ativo (true) ou não (false).
+
+  constructor(
+      id: number, // O construtor recebe o 'id' como número.
+      nome: string, // O 'nome' como string.
+      email: string, // O 'email' como string.
+      ativo: boolean, // O 'ativo' como booleano.
+      senha: string | null = null // A 'senha' é opcional e, se não for fornecida, será nula por padrão.
+  ) {
+      // Dentro do construtor, as propriedades da classe são inicializadas com os valores recebidos como argumentos.
+      this.id = id; 
+      this.nome = nome; 
+      this.email = email; 
+      this.ativo = ativo; 
+      this.senha = senha; 
+  }
+}
+
+// Criando uma nova instância da classe 'Usuario'.
+const usuario: Usuario = new Usuario(1, 'João', 'joao@empresa.com.br', true);
+// Aqui, estamos criando um novo objeto 'usuario' da classe 'Usuario', passando os valores correspondentes para o construtor.
+
+console.log(usuario); // Exibe o objeto 'usuario' no console.
+
+// Importando funções específicas e uma classe de outros arquivos
+import { calcularDesconto, calcularTotal } from './functions/calcularTotal';
+// Aqui estamos importando as funções 'calcularDesconto' e 'calcularTotal' de um módulo específico.
+// As chaves '{}' são usadas quando você está importando funções ou variáveis nomeadas de um módulo.
+
+import removerItensZerados from './functions/removerItensZerados';
+// Esta linha importa a função 'removerItensZerados' de um módulo.
+// Neste caso, não usamos chaves porque estamos importando a exportação padrão do módulo.
+
+import Carrinho from './model/Carrinho';
+// Aqui estamos importando a classe ou interface 'Carrinho' como a exportação padrão do módulo.
+
+const carrinhoOriginal: Carrinho = {
+    // Criando um objeto 'carrinhoOriginal' do tipo 'Carrinho'.
+    itens: [
+        { nome: 'Caneta', preco: 1.5, quantidade: 2 },
+        { nome: 'Caderno', preco: 10, quantidade: 1 },
+        { nome: 'Borracha', preco: 0.5, quantidade: 3 },
+        { nome: 'Estojo', preco: 5, quantidade: 0 },
+    ],
+    cupom: 0.1, // O valor do cupom de desconto aplicado (10%).
+    total: 0, // O total inicial do carrinho.
+    totalComDesconto: 0, // O total do carrinho após a aplicação do desconto.
+};
+
+// Remover itens com quantidade zero do carrinho original
+const carrinhoSemItensZerados = removerItensZerados(carrinhoOriginal);
+// A função 'removerItensZerados' é chamada com 'carrinhoOriginal' como argumento, 
+// e retorna um novo carrinho sem itens com quantidade igual a zero.
+
+const carrinhoComTotal = calcularTotal(carrinhoSemItensZerados);
+// A função 'calcularTotal' é chamada para calcular o total do carrinho (sem itens zerados).
+
+const carrinhoComDesconto = calcularDesconto(carrinhoComTotal);
+// A função 'calcularDesconto' é chamada para calcular o total após aplicar o desconto.
+
+console.log(carrinhoOriginal); // Exibe o carrinho original no console.
+console.log(carrinhoComDesconto); // Exibe o carrinho com o desconto aplicado no console.
+
+import ItemCarrinho from './ItemCarrinho';
+// Importa a classe ou interface 'ItemCarrinho' de outro arquivo.
+// Isso é necessário para que a interface 'Carrinho' possa utilizar 'ItemCarrinho' como tipo para seus itens.
+
+export default interface Carrinho {
+    // Define a interface 'Carrinho' como a exportação padrão deste módulo.
+    
+    readonly itens: ItemCarrinho[];
+    // A propriedade 'itens' é um array que contém objetos do tipo 'ItemCarrinho'.
+    // 'readonly' indica que esta propriedade não pode ser modificada após a inicialização do objeto.
+
+    readonly cupom?: number;
+    // A propriedade 'cupom' é um número opcional (indicado pelo '?'), representando um desconto.
+    // Também é 'readonly', o que significa que não pode ser alterada após a criação do objeto.
+
+    total: number;
+    // A propriedade 'total' é um número que armazena o valor total dos itens no carrinho.
+
+    totalComDesconto: number;
+    // A propriedade 'totalComDesconto' é um número que armazena o valor total após aplicar um desconto.
+}
+
+import Carrinho from '../model/Carrinho';
+// Importa a interface 'Carrinho' de outro arquivo localizado em '../model/Carrinho'.
+// Isso permite que a função utilize a definição da interface para garantir que o argumento 'carrinho' tenha a estrutura correta.
+
+export default function removerItensZerados(carrinho: Carrinho): Carrinho {
+    // Define a função 'removerItensZerados' como a exportação padrão deste módulo.
+    // A função aceita um parâmetro chamado 'carrinho', que deve ser do tipo 'Carrinho'.
+    // A função retorna um novo objeto do tipo 'Carrinho'.
+
+    const itens = carrinho.itens.filter((item) => item.quantidade > 0);
+    // Usa o método 'filter' para criar um novo array 'itens', contendo apenas os itens cuja propriedade 'quantidade' é maior que 0.
+    // Isso remove os itens que têm quantidade igual a zero.
+
+    return { ...carrinho, itens };
+    // Retorna um novo objeto 'Carrinho' utilizando o operador de spread '...', que copia todas as propriedades do 'carrinho' original.
+    // A propriedade 'itens' é substituída pelo novo array filtrado, garantindo que o objeto retornado não contenha itens zerados.
+}
+
+export default abstract class Carro {
+  // Define a classe 'Carro' como uma classe abstrata, que não pode ser instanciada diretamente.
+  constructor(
+      private readonly velocidadeMaxima: number = 220,
+      private readonly aceleracao = 5,
+      private readonly frenagem = 5,
+      protected velocidadeAtual: number = 0,
+  ) {}
+
+  get velocidade(): number {
+      // Método getter para acessar a velocidade atual do carro.
+      return this.velocidadeAtual;
+  }
+
+  acelerar(): number {
+      // Método para aumentar a velocidade do carro.
+      const novaVelocidade = this.velocidadeAtual + this.aceleracao;
+      this.velocidadeAtual = novaVelocidade <= this.velocidadeMaxima ? novaVelocidade : this.velocidadeMaxima;
+      // Se a nova velocidade for maior que a velocidade máxima, define a velocidade atual como a velocidade máxima.
+      return this.velocidadeAtual;
+  }
+
+  frear(): number {
+      // Método para reduzir a velocidade do carro.
+      const novaVelocidade = this.velocidadeAtual - this.frenagem;
+      this.velocidadeAtual = novaVelocidade >= 0 ? novaVelocidade : 0;
+      // Se a nova velocidade for menor que 0, define a velocidade atual como 0.
+      return this.velocidadeAtual;
+  }
+}
+
+class Civic extends Carro {
+  // Classe 'Civic' que estende a classe 'Carro'.
+  constructor() {
+      super(230, 10, 5);
+      // Chama o construtor da classe pai 'Carro' com valores específicos para 'velocidadeMaxima', 'aceleracao' e 'frenagem'.
+  }
+}
+
+interface Esportivo {
+  // Define uma interface 'Esportivo' com métodos para controlar o turbo.
+  ligarTurbo(): void;
+  desligarTurbo(): void;
+}
+
+class Ferrari extends Carro implements Esportivo {
+  // Classe 'Ferrari' que estende a classe 'Carro' e implementa a interface 'Esportivo'.
+  private turbo = false;
+
+  constructor() {
+      super(350, 20, 15);
+      // Chama o construtor da classe pai 'Carro' com valores específicos para 'velocidadeMaxima', 'aceleracao' e 'frenagem'.
+  }
+
+  ligarTurbo(): void {
+      this.turbo = true;
+      // Método para ativar o turbo do carro.
+  }
+
+  desligarTurbo(): void {
+      this.turbo = false;
+      // Método para desativar o turbo do carro.
+  }
+
+  acelerar(): number {
+      // Sobrescreve o método 'acelerar' para adicionar um efeito do turbo se estiver ativado.
+      if (this.turbo) {
+          super.acelerar(); // Chama o método 'acelerar' da classe pai.
+          return super.acelerar(); // Aumenta a velocidade mais uma vez se o turbo estiver ativado.
+      } else {
+          return super.acelerar(); // Se não, apenas chama o método da classe pai.
+      }
+  }
+}
+
+// Código para testar as classes e suas funcionalidades.
+let meuCarro: Carro = new Civic(); // Cria um novo objeto 'Civic'.
+meuCarro.acelerar(); // Acelera o carro.
+meuCarro.acelerar(); // Acelera o carro novamente.
+meuCarro.acelerar(); // Acelera o carro mais uma vez.
+console.log('Civic:', meuCarro.velocidade); // Exibe a velocidade atual do Civic.
+
+meuCarro = new Ferrari(); // Cria um novo objeto 'Ferrari'.
+(meuCarro as Ferrari).ligarTurbo(); // Ativa o turbo no objeto 'Ferrari'.
+meuCarro.acelerar(); // Acelera o carro.
+meuCarro.acelerar(); // Acelera o carro novamente.
+meuCarro.acelerar(); // Acelera o carro mais uma vez.
+
+console.log('Ferrari:', meuCarro.velocidade); // Exibe a velocidade atual da Ferrari.
+
+meuCarro.frear(); // Reduz a velocidade do carro.
+meuCarro.frear(); // Reduz a velocidade do carro novamente.
+
+console.log('Ferrari:', meuCarro.velocidade); // Exibe a velocidade atual da Ferrari após a frenagem.

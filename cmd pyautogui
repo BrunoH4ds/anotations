@@ -1,0 +1,15 @@
+#.scroll() para descer a janela ou subir usando ex: descer -100 subir +100
+#button='' left,middle ou right para mudar qual botao do mouse um comando vai executar
+#.mouseup() para parar de precionar o botao do mouse
+#.mousedown() para manter precionado o botao mouse
+#.moveTo() para mover o mouse ate a posicao
+#.hotkey('','') para ele precionar mais de uma tecla ao mesmo tempo (tudo em minusculo)
+#.alert("") usado para indicar uma mensagem como: "o codigo esta iniciando tire a mao do mouse e teclado"
+#.KEYBOARD_KEYS para saber todas as teclas configuradas no pyautogui
+#.position() para encontrar a localizacao do ponteiro do mouse na tela
+#.sleep() para pausar o codigo 
+#.PAUSE para ele dar um tempo para cada comando (extremamente importante colocar um tempo para a execucao)
+#.press("") para ele precionar uma tecla
+#.write("") para ele escrever
+#nomevartabela.index para ele dizer que e o indice da tabela
+#pandas.isna(nomedatabela) para identificar se o item ou a tabela nao esta vazia

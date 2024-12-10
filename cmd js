@@ -1,0 +1,180 @@
+#variaveis
+#var Define uma variável que pode ser reatribuída. Exemplo: var a = 1;
+#let let: Define uma variável que pode ser reatribuída, mas tem escopo de bloco. Exemplo: let a = 1; Se definida dentro de um bloco, como um if, ela só existe dentro daquele bloco.
+#const Define uma constante que não pode ser reatribuída. Exemplo: const a = 1;
+
+#listas
+#arr Um array (lista) que pode guardar diferentes valores em uma única variável. Exemplo: let arr = [a, b, c];
+#obj Um objeto que pode ter várias propriedades com valores associados. Exemplo: let obj = { nome: "Pedro" };
+
+#Dom
+#document Representa o documento HTML carregado e permite manipular o conteúdo e estrutura da página.
+
+#loops
+#for (let i in obj): Itera sobre as propriedades de um objeto.
+#for (let i of arr): Itera sobre os valores de um array.
+
+#funcoes
+#function nomedafuncao(parametros): Define uma função que pode ser reutilizada.
+
+#metodos
+#.touppercase() para deixar uma palavra em maiuculo
+#.sort() para organizar uma lista em ordem crescente ela não organiza em ordem decrescente. Para isso, use .sort().reverse()
+#.tofixed() para arredondar um numero 
+
+#assincrona
+#fetch(URL) para fazer uma requisicao na rede para buscar por mais dados
+#async e await ela pausa o programa ate que a requisicao volte ou falhe
+
+#alert() cria uma caixa de alerta em cima do site para avisar algo
+#document.write() para escrever ou somar,diminuir,dividir etc.
+#innerhtml = "" para escrever algo no html posso colocar uma function e definir seus val ex: innerthtml= nome da fnc (val1,val2)
+#onclick="nomefunction" com um click ele vai chamar a funcao
+
+#comparacao (True) or (False)
+#+= ele soma e diz que e igual a var
+#=== ele verifica se o valor e igual e o tipo de caracter tambem pode ser escrito com !==
+#< menor > maior
+#<= menor e igual >= maior e igual
+
+#operador terceario
+#? '' : '' para mudar o resultado de true e false ex: (idade<18) ? "nao eleitor"(true): "sim e eleitor" (false)
+
+#operador logico
+#&& dois es comerciais sao o e ex idade >18 && idade <40 ele vai retornar true se nao false
+#|| ele e o ou 
+#!(var) representao o nao ex: !(var==18) deve retornar true caso contrario false
+
+#funcao
+#function nome (var1,var2){o que ela vai fazer}
+#return para sair
+#nomefunction() para chamar a funcao
+
+#const nome ={nome: x,idade:function (){}}
+#(nome.idade) caso eu queira chamar alguma coisa expecifica use o .
+#this quer dizer deste ex: return "a marca e" + this.nome
+
+#eventos
+
+#onclick => disparado quando recebe um click
+#ondblclick => disparado quando click duplo
+#onmouseover => disparado quando o mouse está sobre
+#onmouseout => disparado quando o mouse sai do objeto
+#onmousemove => disparado quando o mouse é movido no elemento
+#onmousedown => disparado quando o click do botão for pressionado
+#onmouseup = > disparado quando o click do mouse é solto
+#onfocus => disparado quando o elemento recebe o foco. Válido para input
+#onchange => disparado quando há uma mudança no conteúdo. "Ao mudar"
+#onblur => disparado quando o elemento perde o foco
+#onkeydown => disparado quando uma tecla é pressionada 
+#onkeypress => disparado quando uma tecla é pressionada e solta
+#onkeyup => disparado quando uma tecla é solta sobre o elemento
+#onload => disparado quando a página terminou de ser carregada. Body
+#onresize => disparado quando há um redimencionamento da janela
+
+#.style para mudar o estilo em css de alguma coisa ex: document.getElementById('btn').style.backgroundColor = "red";
+#.value quando for um entry use o value para alterar seu valor de dentro ou para saber o valor
+
+#arrays
+#let nomelista [] para criar uma lista lembrando que comeca em 0
+#nomelista[posicao]= nome para mudar a posicao de um item para outro
+#nomelista.length para mostrar a quantidade de itens em uma lista
+#nomelista[nomelista.length-1]vai sempre mostrar o ultimo item da lista
+#nomelista.push('') para adicionar algo ao final da lista
+#caso voce adicione um item em uma posicao maior ex: colocar casado na pos 8 e so tiver ate a 4 na lista as outras posicoes ficarao indefinidas
+#array.isarray(nomelista) para descobrir se a lista e realmente um array
+#nomelista.pop() para remover o ultimo item da lista
+#nomelista.shift() para remover o primeiro item da lista
+#nomelista.unshift("") para adicionar algo ao primeiro lugar da lista
+#delete nomelista(posicao) porem a posicao ainda fica porem ele troca a posicao por undefined
+#nomelista.splice(posicao, quantas posicoes que deseja deletar, "o que quer add", "caso for mais de 1") para adicionar um item em determinada posicao
+#nomelista1.concat(nomelista2, nomelista3) para juntar duas ou mais listas (necessario usar em uma var diferente)
+#nomelista.slice(posicao, posicaofinal) para dividir uma lista em dois caso eu nao coloque a posicao final ele vai add todas as posicao para frente na nova lista
+#nomelista.sort()  para organizar a lista em ordem alfabetica
+#nomelista.reverse() para organizar a lista ao contrario
+#nomelista.sort(function (a,b){return a-b}) para organizar a lista em ordem numerica
+#para pegar o maior numero e necessessario criar uma funcao para isso
+#function maiorn(arrays){ return math.max.apply(null, array)} ai por fim voce chama a funcao com o nomefuncao(nomelista)
+#para o menor numero a unica coisa que voce altera e o return math.mim.apply(null, array) ao inves de max para min
+#nomelista.filter(nomedafuncao) para filtrar um valor ai voce cria uma funcao no qual ela filtre ex: function nomefcn(value,index,array){ return value >20 }
+#nomevaroulista.tolowercase() para deixar tudo em minusculo
+#nomevaroulista.touppercase() para deixar tudo em maiúsculo
+#nomevar.lenght para ver o tamanho da lista
+
+#metodos para arrays
+#.join("algo que voce queira") ex: a lista quando voce pede para ela escrever so a lista fica bolo,agua usando o nomelista.join(" ") ele fica bolo agua
+
+#if e else
+
+#if se
+#else if senao se
+#else senao
+
+#new Date().gethours() para pegar as horas
+#null caso esteja vazio ex : if (nome ==null){nomevar.innerhtml='o campo esta vazio'}
+#nomevar.innerhtml = "<option value='"+i+"'>" +i+ "</option>" para ele criar uma opcao no html
+
+#switch
+
+#switch (expressao) { case a:     break;case b:      break; default:} usado para realizar diferentes acoes com base em diferentes condicoes default: e caso nao seja nenhum dos casos ele faz o que esta no default
+
+#repeticao
+
+#for enquanto ex: for (let i=0, i<10001, i++){Label.innerhtml += i} enquanto i for menor que 10001 ele vai escrever i sem esquecer o anterior usando +=
+# voce pode usar o -- para ele diminuir um e inverter os valores assim ele ficaria em ordem decrescente
+
+#settimeout() e setInterval()
+
+#settimeout(funcao() {comando que vai executar} tempo em milisegundos) vai excutar a funcao uma vez depois do tempo esperado (e possivel definir uma fnc)
+#setinterval(funcao() {comando que vai executar} tempo em milisegundos) vai ativar uma funcao continuamente toda vez que o tempo zerar
+
+#cleartimeout(nomedavartime) comando usado para parar o settimeout
+#clearinterval(nomedavarint) comando usado para parar o setinterval
+#parseint(nomedavar) comando usado para transformar texto em numero
+
+#class
+#class nomedaclasse{nomedafnc(valores){this.nomepropriedade= valor}}
+#voce pode pegar os valores de uma var ou de uma lista ex: const nomevar= new nomedaclass(valores) ou const carro = {marca: 'x',modelo: 'x', ano: 0,}
+#this significa este obj
+#this.nomepropriedade + "texto" para chamar a propriedade e juntala a um texto ou outra coisa
+#nomedavar.nomedapropriedade= valor assim voce pode mudar o valor de algo
+#a var com os valores sempre precisa estar depois da criacao da classe
+
+#manipulacao de Data
+
+#atribuicaodevardata = new Date(); para ele pegar a data
+#atribuicaodevarano = new data.getFullYear(); para pegar o ano
+#atribuicaodevarmes = new data.getMonth(); para pegar o mes sendo 0 jan e 11 dezembro caso eu queira escrito eu precisaria criar uma matriz
+#mesescritovar = listacommesesdoano[data.getMonth()]; para pegar o mes escrito
+#atribuicaodevardia = new data.getDate(); para pegar o dia 1 ate 31
+#atribuicaodevarsemanas = new data.getDay(); para pegar o dia da semana de 0 a 6 sendo 0 domingo e 6 sabado
+#para pegar o dia da semana escrito eu teria que fazer a mesma coisa criar uma matrix
+#atribuicaodevarhoras = new data.getHours(); para pegar as horas de 0 a 23
+#atribuicaodevarminutos = new data.getMinutes(); para pegar os minutos de 0 a 59
+#atribuicaodevarsegundos = new data.getSeconds() para pegar os segundos de 0 a 59
+#atribuicaodevarmilisecundos = new data.getMilliseconds() para pegar os milisegundos de 0 a 999
+#atribuicaodevarmes = new data.toLocaleString('pt-br') para pegar a data no formato br data e hora caso eu queira diminuir o tamanho posso colocar ex: ('pt-br', {datestyle: 'short'}) para mostrar so a data timestyle: 'short' para mostrar so a hora
+#caso gostariamos de colocar um zero quando chamar o dia e o ano podemos usar uma funcao function nomedafnc (valor) {return x<10 ? '0'+ valor : ''+ valor;}
+#obs podemos colocar um +1 na frente das datas para que nao comece em zero 
+#atribuicaodevarmes = new Date(Ano, mesde0a11, dia) para adicionarmos uma data ex: var vencimento = new Date(2024, 11, 1);
+#nomedavar = vardata.gettime() - datainicial.gettime(); para pegar a diferenca em milisegundos de duas datas para enfim transformar em dias com um variavel
+#nomedavar= math.ceil  (vardiferencaemMM / (24 * 60 *60 * 1000)) assim descobrimos a diferenca de dias de duas datas
+#math para calculos matematicos
+#.ceil(conta) para ele arredondar
+
+#json
+
+#Json.parse(nomedavar) converte texto em objeto json
+#json.stringify(nomedavar) converte objeto em texto json ex uma lista 
+
+#nomedavar = new xmlhttprequest() para ele entrar no site
+#nomedavar.open('GET','SITE') para ele pegar os dados do site
+#nomedavar.send() para ele enviar a solicitacao
+#nomedavar.onload = function () { document.getelementbyid('nomedaidhtml').innerhtml= this.responsetext} para ele escrever as informacoes
+#nomedavar.onload = function () { document.getelementbyid('nomedaidhtml').innerhtml= this.responsetext nomedavar = json.parse(thisresponsetext) alert(obj.ddd)} para ele dar um alesta em uma informacao especifica
+
+#? significa Entao
+#: senao 
+
+#.value.trim(); pega o valor com letra minuscula e remove os espacos
+#nomevar.addEventListener('keyup',function(event){if(event.keyCode===13){event.preventDefault();add.click();}})); ele vai esperar quando precionar um botao(enter= 13)e soltar ele vai parar qualquer outra tecla antes e executar o botao add

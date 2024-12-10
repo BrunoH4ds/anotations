@@ -1,0 +1,176 @@
+# <nav> 
+# Define uma seção de navegação, usada para agrupar links de navegação.
+# Exemplo:
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+# <ul> 
+# Cria uma lista não ordenada (com marcadores).
+# Exemplo:
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+# <li> 
+# Define um item dentro de uma lista. Deve estar dentro de <ul> ou <ol>.
+# Exemplo:
+<li>Item da lista</li>
+
+# <a href="">
+# Cria um link que redireciona para outra página ou âncora na mesma página.
+# Exemplo:
+<a href="https://www.exemplo.com">Visite o site</a>
+
+# <link rel="stylesheet" href="">
+# Usado para vincular uma folha de estilo externa ao documento HTML.
+# Exemplo:
+<link rel="stylesheet" href="styles.css">
+
+# <header> 
+# Define o cabeçalho de uma página ou seção, geralmente contém logotipos, menus e títulos.
+# Exemplo:
+<header>
+  <h1>Título da Página</h1>
+  <nav>
+    <!-- Links de navegação -->
+  </nav>
+</header>
+
+# <img src="" alt="">
+# Incorpora uma imagem na página. O atributo `alt` fornece um texto alternativo.
+# Exemplo:
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+# <div> 
+# Tag genérica de contêiner usada para agrupar conteúdo para fins de estilo ou script.
+# Exemplo:
+<div class="container">
+  <!-- Conteúdo aqui -->
+</div>
+
+# text-align
+# Propriedade CSS usada para alinhar texto dentro de um elemento.
+# Exemplo:
+<style>
+  .texto-centralizado {
+    text-align: center;
+  }
+</style>
+
+# <main> 
+# Define o conteúdo principal de um documento. Deve conter conteúdo único relacionado ao propósito da página.
+# Exemplo:
+<main>
+  <section>
+    <!-- Conteúdo principal -->
+  </section>
+</main>
+
+# <section> 
+# Cria uma seção temática dentro de um documento. Pode conter um cabeçalho.
+# Exemplo:
+<section>
+  <h2>Título da Seção</h2>
+  <p>Conteúdo da seção.</p>
+</section>
+
+# <p> 
+# Define um parágrafo de texto.
+# Exemplo:
+<p>Este é um parágrafo.</p>
+
+# <footer> 
+# Define o rodapé de uma página ou seção. Geralmente contém informações de contato, direitos autorais, etc.
+# Exemplo:
+<footer>
+  <p>&copy; 2024 Meu Site</p>
+</footer>
+
+# target="_blank"
+# Atributo usado em links (<a>) para abrir o link em uma nova aba ou janela.
+# Exemplo:
+<a href="https://www.exemplo.com" target="_blank">Abrir em nova aba</a>
+
+# placeholder=""
+# Atributo usado em campos de entrada (<input>) para mostrar um texto de dica dentro do campo.
+# Exemplo:
+<input type="text" placeholder="Digite seu nome">
+
+# value=""
+# Atributo usado em campos de entrada (<input>) para definir um valor inicial.
+# Exemplo:
+<input type="text" value="Texto inicial">
+
+# <select> 
+# Cria uma caixa de seleção, usada para selecionar uma opção entre várias.
+# Exemplo:
+<select>
+  <option value="1">Opção 1</option>
+  <option value="2">Opção 2</option>
+  <option value="3">Opção 3</option>
+</select>
+
+# <option> 
+# Define uma opção dentro de uma caixa de seleção (<select>).
+# Exemplo:
+<option value="1">Opção 1</option>
+
+# <ol>
+# Define uma lista ordenada (com numeração).
+# Exemplo:
+<ol>
+  <li>Macarrão</li>
+  <li>Arroz</li>
+</ol>
+
+# <b>
+# Usado para colocar um texto em negrito.
+# Exemplo:
+<b>Texto em negrito</b>
+
+# <span>
+# Tag em HTML que não cria uma nova linha; usada para agrupar conteúdo inline.
+# Exemplo:
+<span>Texto dentro de um span</span>
+
+# <aside>
+# Define conteúdo relacionado, como uma barra lateral.
+# Exemplo:
+<aside>
+  <h2>Informações adicionais</h2>
+  <p>Conteúdo lateral.</p>
+</aside>
+
+# <section>
+# Cria uma seção temática dentro de um documento. Pode conter um cabeçalho.
+# Exemplo:
+<section>
+  <h2>Título da Seção</h2>
+  <p>Conteúdo da seção.</p>
+</section>
+
+# <video>
+# Incorpora um vídeo na página.
+# Exemplo:
+<video src="video.mp4" controls>
+  Seu navegador não suporta a tag de vídeo.
+</video>
+
+# <audio>
+# Incorpora um áudio na página.
+# Exemplo:
+<audio src="audio.mp3" controls>
+  Seu navegador não suporta a tag de áudio.
+</audio>
+
+# <iframe>
+# Usado para incorporar outra página HTML dentro da atual.
+# Exemplo:
+<iframe src="https://www.exemplo.com" width="600" height="400"></iframe>

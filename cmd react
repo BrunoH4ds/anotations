@@ -1,0 +1,41 @@
+//'use client' para poder usar os eventos de um botao 
+//lembrando use o export para exportar uma funcao e use <nomedafnc /> para importar a funcao e o html se tiver
+//useState(vlr) para tornar a fnc um estado que pode ser alterado sempre pois o react nao faz isso
+//ele roda sempre para o lado do servidor as fnc e tudo sendo 'use serve' por isso e necessario 'use client' assim ele mostra no lado do cliente ou seja na pag
+// pode se estilizar esse export de fnc 
+
+
+'use client'
+import { useState } from 'react'
+
+interface ContadorProps { 
+    valorInicial?: number // caso nao tenha ? e necessario definir o valor no html da pag
+}
+
+export default function Contador(props: ContadorProps) {
+    const [numero, alterarNumero] = useState(props.valorInicial ?? 0) // ?? representa se nao comeca com 0
+    // ele criou uma lista que recebe os valores sendo o numero recebe o primerio vlr e o alterar numero recebe o outro 
+
+    function decrementar() {
+        alterarNumero(numero - 1)
+    }
+
+    function incrementar() {
+        alterarNumero(numero + 1)
+    }
+
+    return (
+        <div>
+            <h1>Contador</h1>
+            <span>{numero}</span>
+            <div className="flex gap-2">
+                <button onClick={decrementar} className="bg-red-500 p-2">
+                    Decrementar
+                </button>
+                <button onClick={incrementar} className="bg-green-600 p-2">
+                    Incrementar
+                </button>
+            </div>
+        </div>
+    )
+}

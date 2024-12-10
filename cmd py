@@ -1,0 +1,28 @@
+#nomevar.isupper() e maiusculo ou tem (retorna true ou false)
+#nomevar.islower() e minusculo ou tem (retorna true ou false)
+#nomevar.isdigit() e numero ou tem (retorna true ou false)
+#nomevar.isalpha() e uma letra ou tem (retorna true ou false)
+#nomevar.isalnum() e tem um numero e letra ou tem (retorna true ou false)
+#nomelista.append(item) adicionar um item a uma lista
+#nomelista.insert(índice, item): Insere um novo item em uma posição específica na lista.
+#nomelista.remove(item): para remover um item de uma lista(ele remove o primeiro que tiver)
+#nomevar=nomelista.pop(item): Remove e retorna o item na posição especificada (ou o último item se nenhum índice for fornecido). caso queira mostrar o item removido de um print(nomevar)
+#nomevar=nomelista.index(item): Retorna o índice da primeira ocorrência de um item específico na lista. Se o item não estiver presente, lança um ValueError.
+#nomevar=nomelista.count(item): Retorna o número de vezes que um item específico aparece na lista.
+#nomelista.sort(): Ordena os itens da lista em ordem crescente (ou decrescente se reverse=True).
+#nomelista.reverse(): Inverte a ordem dos itens na lista.
+#nomelista.clear(): Remove todos os itens da lista, deixando-a vazia.
+#nomevar=nomelista.copy(): Cria uma cópia rasa (shallow copy) da lista. As alterações na lista copiada não afetam a lista original.
+#nomelista1.extend(nomelista2): Adiciona todos os itens de um iterável (como outra lista) ao final da lista atual
+#nomevar='separador'.join(nomelista): junta elementos de uma lista em uma string ou separa. junta: nomevar = nomelista.join(nomelista)
+#nomevar=nomevar.split('como que quer separar'): Divide uma string em uma lista de substrings, usando um delimitador (separador) opcional.
+#nomevar=nomevar.strip(): Remove espaços em branco no início e no final de uma string.
+#nomevar=nomevar.upper(): Converte todos os caracteres de uma string para maiúsculas.
+#nomevar=nomevar.lower(): Converte todos os caracteres de uma string para minúsculas.
+#nomevar=nomevar.replace("oq que substituir", "o que vai substituir"): Substitui todas as ocorrências de uma substring por outra.
+#nomevar=nomevar.startswith("palavra"): Verifica se a string começa com um prefixo específico.
+#nomevar=nomevar.endswith("palavra"): Verifica se a string termina com um sufixo específico.
+#nomevar= len(nomevar que deseja ver o comprimento): Retorna o comprimento (número de caracteres) de uma string.
+#nomevar= str(nomevar converter): Converte um objeto para uma string.
+#def nomevar(**kwargs) para adicionar parametros que nao estejam ja definidos
+#nomevar.captalise() para add a primeira letra em maiusculo ex: lira para Lira

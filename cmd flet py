@@ -1,0 +1,18 @@
+#nomedavarflet.app(target=nomedafuncaoprincipaldositeouapp, view=ft.AppView.WEB_BROWSER para criar um site ao inves do app, port= numero da porta que vai rodar a aplicacao) para executar a funcao usando flet
+#nomedapag.add(nomevarflet.row ou column([funcoes que vao aparecer])nomevar) para adicionar algo na pagina
+#nomevar = nomedavarflet.Text("texto") para escrever algo na pagina
+#nomevar = nomedavarflet.column() para ele criar uma coluna na pagina
+#nomevar = nomedavarflet.textfield(label="o que vai aparecer",  on_submit=funcao que vai fazer quando enviar) para criar um input
+#nomevar = nomedavarflet.button("o que vai aparecer", on_click=funcaoquevaiexecutar) para criar um botao
+#nomedapag.remove(nomevar) para remover algo da pagina
+#obs: sempre que a funcao receber algum evento por exemplo um clique para abrir a pagina ela obrigatoriamente vai ter como parametro o (evento)
+#nomevar = nomedavarflet.AlertDialog(open=False, modal=True,title=ft.Text("Titulo que vai ter no popup"), content=nomedavar o conteudo que o popup vai ter,actions=[ft.ElevatedButton("nome do botao", on_click=funcao que vai executar quando clicar)],) para criar um popup
+#nomedapag.dialog = nomevar para dizer que a caixa de dialogo vai ficar na frente de tudo
+#nomevar.open = true para abrir um popup ou algo na pag
+#nomedapag.update() para atualizar a pagina obs sempre que colocar algo na tela da pagina e preciso atualizar
+#nomevar.open = false para fechar um popup ou algo na pag
+#nomevar.value = "valor" para atribuir um valor a algum elemento ad pag
+#nomevar.controls.append(nomedavarflet.Elemento(valores)) para adicionar um item
+#obs no .text e possivel usar (f"") e atribuir valores dinamicos
+#nomevarpag.pubsub.subscribe(funcao que vai ser o tunel de comunicacao) para criar um tunel com uma comunicacao entre os usuarios
+#nomevarpag.pubsub.send_all({}) para enviar as informacoes a todos os usuarios do tunel

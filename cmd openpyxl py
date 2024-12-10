@@ -1,0 +1,15 @@
+#obs (nao pode deixar duas planilhas abertas ao mesmo tempo)
+#casp voce queira ver qualquer coisa so dar print
+#nomevararquivo = load_workbook('nome do arquivo') para carregar o arquivo excel caso esteja em outra pasta voce precisa passar o caminho do arquivo
+#nomevar = Workbook  ('nome para o arquivo') para criar uma planilha nova
+#print(nomevararquivo.sheetnames) para ver as abas do arquivo
+#nomevar = nomevararquivo.active para ver a aba que esta selecionada (lembre-se de dar print)
+#nomevarabaatual = nomearquivo['nomedaaba'] para abrir uma aba especifica
+#nomevarabaatual["celula"].value para pegar o valor da celula ex: a1,b1,c4 etc
+#nomevarabaatual.cell(row=,column=).value para pegar o valor da celular por uma coluna e row
+#nomevarabaatual["celula"].value = 'valor para mudar' para voce mudar o valor de uma celula
+#nomevararquivo.save('nomedoarquivo') para salvar as alteracoes do arquivo caso voce queira salvar em outro arquivo basta apenas mudar o nome para outro diferente do arquivo original
+#nomedaabaatual.max_row para ver a ultima linha da aba e o .max_column para ver a ultima coluna
+#len (nomedaabaatual['coluna']) para ver a ultima linha da aba
+#nomevar.create_sheet(nomedaaba) para criar abas
+#nomevar._style para ele pegar o estilo da aba

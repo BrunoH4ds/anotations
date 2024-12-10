@@ -1,0 +1,13 @@
+#phpinfo(); para trazer todas as informacoes do php
+#echo "saida"; o que vai ser escrito ou seja e um print
+#php -S localhost:8888 nome do arquivo php; para abrir um servidor em php no navegador
+#function nomedafnc (valores) { o que a fnc vai fazer} para criar uma funcao em php para chamala: nomedafnc(valores);
+#echo PHP_EOL; para pular linha em php 
+#class nomedaclass {funcoes} para criar uma classe
+#public function nomedafnc (valores) {} para criar uma classe publica
+#__CLASS__ para acessar a classe
+# __METHOD__ para acessar o metodo
+#(new nomedaclass)-> nomedafnc(valores); para instanciar ou seja chamar uma fnc dentro de uma classe ou para acessar elementos dentro de objetos
+#$nomedavar= valor; para criar uma variavel
+#var_dump(valor); seria um console.log para php, ele vai mostrar tudo que tem na var ou classe.
+#public function __construct() {o que a fnc vai fazer} serve para passar argumentos para sua classe e armazená-lo em propriedades

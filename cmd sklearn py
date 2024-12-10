@@ -1,0 +1,12 @@
+#Labelencoder() funcao usada para transformar textos em numeros ex: bruno vai virar 1 bahia vai virar 2 e assim por diante
+#.fit_transform(nomevar ou nomevar[valor ou "string"]) ele transforma um texto em numero
+#lembrando e necessario e recomendado que use um labelencoder() para cada coluna ou coisa que queira transformar em numero pois ele nao salva devido serem coisas diferentes
+#train_test_split() funcao usada para testar e treinar a IA
+#x_treino,x_teste,y_treino,y_teste = train_test_split(valorquevaiserpassado,valorqueelevairesultar, test_size=comoelevaisepararosdadosdeteste ex:0.3 para 30%, random_state=oquantoelevairandomizar ex: 1 para 100%) separando os dados para treinar a IA
+#RandomForestClassifier() funcao usada para criar uma ia de arvore de decisao ele faz perguntas para o banco de dados e vai fazendo outras de acordo com a resposta
+#KNeighborsClassifier() funcao usada para criar modelo knn ele observa o dado mais proximo se foi ruim o outro tambem vai ser e se for bom o outro tambem vai ser
+#.fit(x_treino,y_treino) funcao para treinar a ia
+#.predict(x_teste) para calcular as previsoes
+# #accuracy_score() e uma funcao usada para calcular a acuracia da ia
+#accuracy_score(y_teste, vardaia) para mostrar a porcentagem de acertos
+#
